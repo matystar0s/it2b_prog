@@ -6,7 +6,7 @@ Nebojte se googlovat a hledat programátorské rady :)
 ### Násobné Ahoj světě!
 Uživatel ti na vstupu zadá počet opakování. Následně tolikrát vypiš zprávu "Ahoj svete!".
 
-Pokud uživatel zadá na vstupu záporné číslo, vypiš "*Neplatny vsutp*" a ukonči program errorem.
+Pokud uživatel zadá na vstupu záporné číslo, vypiš "*Neplatny vstup*" a ukonči program errorem.
 
 Např.
 - vstup: 3
@@ -20,11 +20,11 @@ Načti číslo udávající výšku a znak. Následně z tohoto znaku vykresli s
 
 Např.
 - vstup: 5 "h"
-- výstup:
-  h
-  hh
-  hhh
-  hhhh
+- výstup:<br>
+  h<br>
+  hh<br>
+  hhh<br>
+  hhhh<br>
   hhhhh
 
 ### Vypsání dělitelů
