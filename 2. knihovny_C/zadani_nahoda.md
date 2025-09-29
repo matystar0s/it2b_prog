@@ -76,20 +76,20 @@ Vygenerované heslo: Zd3a#RkL8
 
 ---
 
-## 4. Pokročilé úlohy
+## 5. Pokročilé úlohy
 
-### 4.1 Simulace pokeru
+### 5.1 Simulace pokeru
 - Napiš program, který simuluje ruku pokeru.
 - Vygeneruj: 2 karty na stole a 3 karty v ruce
 - Zjisti, jaké je nejvyšší hodnota karet, kterou hráč má. Jaké je nejvyšší karty? Má hráč nějakou dvojici? Má hráč postupku?
 
-### 4.2 Monte Carlo simulace
+### 5.2 Monte Carlo simulace
 - Pomocí generování náhodných čísel odhadni hodnotu čísla π.  
 - Postup: vygeneruj N náhodných bodů do čtverce 1x1 a spočítej, kolik z nich leží v kruhu o poloměru 1.  
 - Využij vztah: π ≈ 4 * (počet bodů v kruhu / celkový počet bodů).  
 - viz https://cs.wikipedia.org/wiki/Metoda_Monte_Carlo 
 
-### 4.3 Generátor sudoku
+### 5.3 Generátor sudoku
 Vytvoř program, která je schopna náhodně generovat zadání pro sudoku. Na základě hodnoty proměnné *komplet* má tento program dvě varianty:
 - pokud *komplet=True* vypiš kompletní řešení generovaného sudoku
 - pokud *komplet=False* vypiš pouze polovinu číslic ze zadání.
