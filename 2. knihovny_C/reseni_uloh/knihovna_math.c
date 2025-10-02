@@ -1,14 +1,25 @@
 #include <stdio.h>
-#include <stdlib.h>   
-#include <time.h>    
+#include <math.h>   
 
 int main() {
-    srand(time(NULL));
 
-    int cislo = rand() % 100;
+    // sqrt() - odmocnina
+    //     vystup je typu float   (ve skutečnostidouble)
+    int cislo = 4;
+    printf("Cislo: %d\n", cislo);
+    printf("Odmocnina: %f\n\n", sqrt(cislo));
 
-    printf("Náhodné číslo: %d\n", cislo);
+
+    // round() - zaokrouhleni
+    //     vystup je typu float   (ve skutečnostidouble)
+    float desetinne = 15.87;
+    printf("Cislo: %f\n", desetinne);
+    printf("Zaokrouhleno: %f\n\n", round(desetinne));
+
+
+    // M_PI - konstanta cislo pi
+    printf("Cislo PI: %f", M_PI);
+
+
     return 0;
 }
-
-
