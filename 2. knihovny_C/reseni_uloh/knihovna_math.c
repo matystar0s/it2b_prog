@@ -4,14 +4,14 @@
 int main() {
 
     // sqrt() - odmocnina
-    //     vystup je typu float   (ve skutečnostidouble)
+    //     vystup je typu float   (ve skutecnosti double)
     int cislo = 4;
     printf("Cislo: %d\n", cislo);
     printf("Odmocnina: %f\n\n", sqrt(cislo));
 
 
     // round() - zaokrouhleni
-    //     vystup je typu float   (ve skutečnostidouble)
+    //     vystup je typu float   (ve skutecnosti double)
     float desetinne = 15.87;
     printf("Cislo: %f\n", desetinne);
     printf("Zaokrouhleno: %f\n\n", round(desetinne));
@@ -23,3 +23,4 @@ int main() {
 
     return 0;
 }
+
