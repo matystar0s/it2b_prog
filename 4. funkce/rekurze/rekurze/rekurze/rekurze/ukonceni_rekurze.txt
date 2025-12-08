@@ -1,0 +1,3 @@
+Bez ukončení by se jednalo o nekonečou rekurzi -> to nesmíme dovolit.
+
+Ukončení rekurze se říká také *báze*.
