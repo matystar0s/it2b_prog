@@ -134,6 +134,51 @@ Vytvoř dvě funkce:
 - `void Kontrola(int n, int kod)` – vypíše, zda je kód správný.
 
 ---
+### 12. Lze sestrojit trojúhelník
+Napiš funkci:
+
+- `bool LzeSestrojitTrojuhelnik(double a, double b, double c)`
+
+Funkce dostane na vstupu **tři délky stran trojúhelníka** a vrátí `true`, pokud lze trojúhelník sestrojit, jinak `false`.
+
+#### Příklady:
+- (3, 4, 5) → `true`
+- (1, 2, 3) → `false`
+
+---
+
+### 13. Skoro celé číslo
+Napiš funkci:
+
+- `bool JeSkoroCele(double n, double eps)`
+
+Funkce dostane na vstupu desetinné číslo `n` a odchylku `eps`.  
+Vrátí `true`, pokud se `n` liší od **nejbližšího celého čísla** o méně než `eps`, jinak `false`.
+
+#### Příklad:
+- `n = 1.01`, `eps = 0.01` → `true`
+
+---
+
+## Úlohy – Řízení toku (hra)
+
+### 14. Kámen–nůžky–papír (2 hráči)
+Vytvoř program pro hru **kámen–nůžky–papír** pro 2 hráče.
+
+Hráči zadávají svou volbu jako znak:
+- `K` (kámen)
+- `N` (nůžky)
+- `P` (papír)
+
+Program rozhodne a vypíše:
+- kdo vyhrál (`Hráč 1`, `Hráč 2`), nebo
+- že je to remíza.
+
+#### Příklady:
+- Hráč 1: `K`, Hráč 2: `N` → vyhrává Hráč 1
+- Hráč 1: `P`, Hráč 2: `K` → vyhrává Hráč 1
+- Hráč 1: `N`, Hráč 2: `N` → remíza
+---
 
 
 Toť vše.
