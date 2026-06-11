@@ -1,0 +1,14 @@
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\bin\Debug\net8.0\CichnamonArena.exe
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\bin\Debug\net8.0\CichnamonArena.deps.json
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\bin\Debug\net8.0\CichnamonArena.runtimeconfig.json
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\bin\Debug\net8.0\CichnamonArena.dll
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\bin\Debug\net8.0\CichnamonArena.pdb
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\obj\Debug\net8.0\CichnamonArena.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\obj\Debug\net8.0\CichnamonArena.AssemblyInfoInputs.cache
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\obj\Debug\net8.0\CichnamonArena.AssemblyInfo.cs
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\obj\Debug\net8.0\CichnamonArena.csproj.CoreCompileInputs.cache
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\obj\Debug\net8.0\CichnamonArena.dll
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\obj\Debug\net8.0\refint\CichnamonArena.dll
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\obj\Debug\net8.0\CichnamonArena.pdb
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\obj\Debug\net8.0\CichnamonArena.genruntimeconfig.cache
+C:\Users\st026327\Downloads\CichnamonArena_EN\CichnamonArena3\obj\Debug\net8.0\ref\CichnamonArena.dll
