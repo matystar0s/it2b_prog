@@ -1,0 +1,16 @@
+R:\PROG\WpfApp3\WpfApp3\bin\Debug\WpfApp3.exe.config
+R:\PROG\WpfApp3\WpfApp3\bin\Debug\WpfApp3.exe
+R:\PROG\WpfApp3\WpfApp3\bin\Debug\WpfApp3.pdb
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\WpfApp3.csproj.AssemblyReference.cache
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\MainWindow.g.cs
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\App.g.cs
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\WpfApp3_MarkupCompile.cache
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\WpfApp3_MarkupCompile.lref
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\MainWindow.baml
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\WpfApp3.g.resources
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\WpfApp3.Properties.Resources.resources
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\WpfApp3.csproj.GenerateResource.cache
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\WpfApp3.csproj.CoreCompileInputs.cache
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\WpfApp3.exe
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\WpfApp3.pdb
+R:\PROG\WpfApp3\WpfApp3\obj\Debug\WpfApp3.exe.config
