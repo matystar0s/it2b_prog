@@ -1,0 +1,338 @@
+﻿<Window x:Class="WpfApp1.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1"
+        WindowState="Maximized"
+        mc:Ignorable="d"
+        Title="PokeClicker"
+        Height="450"
+        Width="800">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="C:\Users\xbox_\source\repos\WpfApp1\WpfApp1\images\background.jpg"/>
+        </Grid.Background>
+
+        <Image x:Name="Pokeball"
+               Source="C:\Users\xbox_\source\repos\WpfApp1\WpfApp1\images\pokeball.png"
+               Width="200"
+               Height="200"
+               HorizontalAlignment="Center"
+               VerticalAlignment="Center"
+               MouseLeftButtonDown="Image_Click"
+               Cursor="Hand"
+               RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <ScaleTransform x:Name="PokeballScale"
+                                ScaleX="1"
+                                ScaleY="1"/>
+            </Image.RenderTransform>
+        </Image>
+        
+        
+
+        <StackPanel HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="21,20,0,0">
+
+            <TextBlock x:Name="ClickCounter"
+                       Text="Clicks: 0"
+                       FontSize="30"
+                       FontWeight="Bold"
+                       Foreground="White"/>
+
+            <TextBlock x:Name="Power"
+                       Text="Click Power: 1"
+                       FontSize="30"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       Margin="0,5,0,0"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Left"
+                    VerticalAlignment="Top"
+                    Margin="30,105,0,0">
+
+            <Image x:Name="EggImage"
+                   Source="C:\Users\xbox_\source\repos\WpfApp1\WpfApp1\images\egg1.png"
+                   Width="127"
+                   Height="145"
+                   Stretch="Uniform"
+                   MouseLeftButtonDown="OpenEgg1_Click"
+                   Cursor="Hand"
+                   RenderTransformOrigin="0.5,0.5">
+                <Image.RenderTransform>
+                    <RotateTransform x:Name="EggRotation" Angle="0"/>
+                </Image.RenderTransform>
+            </Image>
+
+            <TextBlock x:Name="EggCost"
+                       Text="100 clicks"
+                       FontSize="25"
+                       FontWeight="Bold"
+                       Foreground="White"
+                       HorizontalAlignment="Center"
+                       Margin="0,5,0,0"/>
+        </StackPanel>
+
+        <Image Source="C:\Users\xbox_\source\repos\WpfApp1\WpfApp1\images\pokedex.png"
+               Width="100"
+               Height="100"
+               HorizontalAlignment="Right"
+               VerticalAlignment="Top"
+               Margin="0,15,20,0"
+               Cursor="Hand"
+               MouseLeftButtonDown="BackpackButton_Click"/>
+
+        <Border x:Name="PokemonReveal"
+                Width="340"
+                Height="390"
+                Background="#EE20232D"
+                BorderBrush="#D92332"
+                BorderThickness="4"
+                CornerRadius="20"
+                HorizontalAlignment="Center"
+                VerticalAlignment="Center"
+                Visibility="Collapsed"
+                Panel.ZIndex="5">
+
+            <StackPanel VerticalAlignment="Center">
+
+                <TextBlock Text="POKÉMON HATCHED!"
+                           FontSize="26"
+                           FontWeight="Bold"
+                           Foreground="#FFD700"
+                           HorizontalAlignment="Center"
+                           Margin="0,15,0,10"/>
+
+                <Image x:Name="RevealedPokemonImage"
+                       Width="220"
+                       Height="220"
+                       Stretch="Uniform"/>
+
+                <TextBlock x:Name="RevealedPokemonName"
+                           FontSize="28"
+                           FontWeight="Bold"
+                           Foreground="White"
+                           HorizontalAlignment="Center"
+                           Margin="0,10,0,5"/>
+
+                <TextBlock x:Name="RevealedPokemonRarity"
+                           FontSize="20"
+                           Foreground="#FFD700"
+                           HorizontalAlignment="Center"/>
+            </StackPanel>
+        </Border>
+
+        <Grid x:Name="PokedexOverlay"
+              Visibility="Collapsed"
+              Background="#99000000"
+              Panel.ZIndex="10">
+
+            <Border Width="1050"
+                    Height="650"
+                    Background="#F4F4F4"
+                    BorderBrush="#B51F2A"
+                    BorderThickness="8"
+                    CornerRadius="22"
+                    HorizontalAlignment="Center"
+                    VerticalAlignment="Center"
+                    Padding="12">
+
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="85"/>
+                        <RowDefinition Height="*"/>
+                    </Grid.RowDefinitions>
+
+                    <Border Grid.Row="0"
+                            Background="#D92735"
+                            CornerRadius="12"
+                            Margin="0,0,0,12">
+
+                        <Grid>
+                            <StackPanel Orientation="Horizontal"
+                                        HorizontalAlignment="Center"
+                                        VerticalAlignment="Center">
+
+                                <Ellipse Width="35"
+                                         Height="35"
+                                         Fill="White"
+                                         Stroke="#8F111B"
+                                         StrokeThickness="3"
+                                         Margin="0,0,15,0"/>
+
+                                <TextBlock Text="POKÉDEX"
+                                           FontSize="38"
+                                           FontWeight="Bold"
+                                           Foreground="White"
+                                           VerticalAlignment="Center"/>
+                            </StackPanel>
+
+                            <Button Content="X"
+                                    Width="48"
+                                    Height="48"
+                                    FontSize="23"
+                                    FontWeight="Bold"
+                                    Background="White"
+                                    Foreground="#D92735"
+                                    BorderBrush="#8F111B"
+                                    BorderThickness="2"
+                                    HorizontalAlignment="Right"
+                                    VerticalAlignment="Center"
+                                    Margin="0,0,15,0"
+                                    Cursor="Hand"
+                                    Click="ClosePokedex_Click"/>
+                        </Grid>
+                    </Border>
+
+                    <Grid Grid.Row="1">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="380"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Border Grid.Column="0"
+                                Background="#E5E5E5"
+                                BorderBrush="#D92735"
+                                BorderThickness="3"
+                                CornerRadius="12"
+                                Padding="8"
+                                Margin="0,0,10,0">
+
+                            <DockPanel>
+                                <TextBlock Text="REGISTERED POKÉMON"
+                                           FontSize="19"
+                                           FontWeight="Bold"
+                                           Foreground="#B51F2A"
+                                           DockPanel.Dock="Top"
+                                           Margin="5,5,5,12"/>
+
+                                <ListBox x:Name="PokedexList"
+                                         Background="White"
+                                         BorderThickness="0"
+                                         SelectionChanged="PokedexList_SelectionChanged"
+                                         ScrollViewer.VerticalScrollBarVisibility="Auto">
+
+                                    <ListBox.ItemContainerStyle>
+                                        <Style TargetType="ListBoxItem">
+                                            <Setter Property="Padding" Value="5"/>
+                                            <Setter Property="Margin" Value="3"/>
+                                            <Setter Property="HorizontalContentAlignment" Value="Stretch"/>
+                                            <Setter Property="Background" Value="White"/>
+                                            <Setter Property="BorderBrush" Value="#DDDDDD"/>
+                                            <Setter Property="BorderThickness" Value="1"/>
+
+                                            <Style.Triggers>
+                                                <Trigger Property="IsSelected" Value="True">
+                                                    <Setter Property="Background" Value="#FFD9DC"/>
+                                                    <Setter Property="BorderBrush" Value="#D92735"/>
+                                                    <Setter Property="BorderThickness" Value="2"/>
+                                                </Trigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </ListBox.ItemContainerStyle>
+
+                                    <ListBox.ItemTemplate>
+                                        <DataTemplate>
+                                            <Grid Height="85">
+                                                <Grid.ColumnDefinitions>
+                                                    <ColumnDefinition Width="85"/>
+                                                    <ColumnDefinition Width="*"/>
+                                                    <ColumnDefinition Width="55"/>
+                                                </Grid.ColumnDefinitions>
+
+                                                <Image Grid.Column="0"
+                                                       Source="{Binding ImagePath}"
+                                                       Width="75"
+                                                       Height="75"
+                                                       Stretch="Uniform"/>
+
+                                                <StackPanel Grid.Column="1"
+                                                            VerticalAlignment="Center"
+                                                            Margin="5,0,0,0">
+
+                                                    <TextBlock Text="{Binding Name}"
+                                                               FontSize="18"
+                                                               FontWeight="Bold"
+                                                               Foreground="#222222"/>
+
+                                                    <TextBlock Text="{Binding Rarity}"
+                                                               FontSize="14"
+                                                               Foreground="#B51F2A"/>
+                                                </StackPanel>
+
+                                                <Border Grid.Column="2"
+                                                        Width="42"
+                                                        Height="42"
+                                                        CornerRadius="21"
+                                                        Background="#D92735"
+                                                        VerticalAlignment="Center">
+
+                                                    <TextBlock Text="{Binding Count}"
+                                                               Foreground="White"
+                                                               FontSize="17"
+                                                               FontWeight="Bold"
+                                                               HorizontalAlignment="Center"
+                                                               VerticalAlignment="Center"/>
+                                                </Border>
+                                            </Grid>
+                                        </DataTemplate>
+                                    </ListBox.ItemTemplate>
+                                </ListBox>
+                            </DockPanel>
+                        </Border>
+
+                        <Border Grid.Column="1"
+                                Background="White"
+                                BorderBrush="#D92735"
+                                BorderThickness="3"
+                                CornerRadius="12"
+                                Padding="20">
+
+                            <StackPanel VerticalAlignment="Center"
+                                        HorizontalAlignment="Center">
+
+                                <TextBlock Text="POKÉMON INFORMATION"
+                                           FontSize="23"
+                                           FontWeight="Bold"
+                                           Foreground="#B51F2A"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,0,0,15"/>
+
+                                <Image x:Name="SelectedPokemonImage"
+                                       Width="270"
+                                       Height="270"
+                                       Stretch="Uniform"/>
+
+                                <TextBlock x:Name="SelectedPokemonName"
+                                           Text="Select a Pokémon"
+                                           FontSize="30"
+                                           FontWeight="Bold"
+                                           Foreground="#222222"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,10,0,5"/>
+
+                                <TextBlock x:Name="SelectedPokemonRarity"
+                                           Text=""
+                                           FontSize="20"
+                                           Foreground="#D92735"
+                                           HorizontalAlignment="Center"/>
+
+                                <TextBlock x:Name="SelectedPokemonCount"
+                                           Text=""
+                                           FontSize="18"
+                                           Foreground="#444444"
+                                           HorizontalAlignment="Center"
+                                           Margin="0,8,0,0"/>
+
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
